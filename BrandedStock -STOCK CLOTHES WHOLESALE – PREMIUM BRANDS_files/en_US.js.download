@@ -1,0 +1,232 @@
+(function () {
+    if (!!(this.Shop) && !!(this.Shop.lang)) {
+        this.Shop.lang.plugins = {};
+
+        this.Shop.lang.name = 'en_US';
+
+        this.Shop.lang.common = {
+            product_vote_alert: 'Error while sending vote.',
+            product_stock_select: 'choose',
+            product_stock_download_error: 'Error while downloading the product information.',
+            product_select_stock: 'Select product variant.',
+            product_select_optionfile: 'Select the required files',
+            product_select_optiontext: 'Fill required text fields',
+            product_select_optionradio: 'Fill/Choose required fields',
+            product_select_optionselect: 'Fill required options',
+            product_select_optioncheckbox: 'Fill required checkboxes',
+            product_select_optioncolor: 'Choose color',
+            maps_position_error: 'No access to information about your location.',
+            file_too_big: 'Selected file exceeds the limit of {size} MB.',
+            search: 'Search in store',
+            view_rwd_version: 'View responsive version',
+            view_desktop_version: 'View full version of the site',
+            close: 'close',
+            recaptchaRequired: 'Recaptcha field not filled',
+            request: {
+                get_error: 'Error while importing data. Try again in a while',
+                send_error: 'Error while sending changes. Try again in a while',
+                parse_error: 'Error while saving changes. Invalid value',
+                unexpected_error: 'Unexpected error'
+            },
+            full_screen: 'full screen',
+            alert: 'Store notification',
+            remove: 'remove',
+            basket_discount: 'total (after discount)',
+            email: 'Email address',
+            discount: 'discount',
+            newP: 'new',
+            select: 'select',
+            loading: 'loading',
+            ok: 'ok',
+            offline: 'You\'re not connected to the internet',
+            offline_long: 'No changes will be saved, and some information might be outdated.',
+            empty: 'empty'
+        };
+
+        this.Shop.lang.quickview = {
+            availability: 'Availability',
+            delivery: 'Dispatched within',
+            evaluation: 'Rating',
+            producer: 'Vendor',
+            price: 'Price',
+            addtobasket: 'Add to cart',
+            exchange: 'Exchange'
+        };
+
+        this.Shop.lang.voting = {
+            vote_n: 'Rate the product as {score}.',
+            vote_message: 'Your rate'
+        };
+
+        this.Shop.lang.basket = {
+            address_request_error: 'Error while retrieving the address.',
+            shipping_different_country: 'Country specified in delivery address is not supported by the selected shipping method. You must specify a different delivery address.',
+            shipping_payment_cost: 'Cost of delivery and payment',
+            shipping_payment: 'Cost of delivery',
+            shipping_payment_from: 'Shipping cost from',
+            add_to_cart: 'Add to cart',
+            exchange: 'Exchange'
+        };
+
+        this.Shop.lang.skinpreview = {
+            close: 'Close preview'
+        };
+
+        this.Shop.lang.milkbox = {
+            x_of_y: 'of'
+        };
+
+        this.Shop.lang.filter = {
+            show_more: 'more',
+            show_less: 'less',
+            mobile_show_more: '(show more)'
+        };
+
+        this.Shop.lang.ajaxlayer = {
+            error: 'Data request error.'
+        };
+
+        this.Shop.lang.bundle = {
+            choose: 'Choose bundle elements'
+        };
+
+        this.Shop.lang.ajaxbasket = {
+            submit_error: 'Error while adding product to the cart.',
+            product_added: 'Successfully added to cart:',
+            product_name: '{name} ({quantity} {unit})',
+            continue_shopping: 'Continue shopping',
+            goto_basket: 'confirmation message go to cart',
+            basket_items: 'Products in cart: {count}. Total order amount: {sum}.',
+            quantity: 'Quantity',
+            netto_label: 'Net price',
+            brutto_label: 'Gross price',
+            basket_value: 'Cart value',
+            basket_value_discount: 'Cart value (after discount)',
+            products_number: 'Number of products in the cart',
+            free_shipping_empty: 'Free shipping ({shippingName}) on orders of {shippingAmount} and more.',
+            free_shipping_higher: 'Order higher than {shippingAmount} - you get a free shipping ({shippingName}).',
+            free_shipping_equal: 'Order for {shippingAmount} - you get a free shipping ({shippingName}).',
+            free_shipping_lower: 'You need another {shippingAmount} for free shipping ({shippingName}).'
+        };
+
+        this.Shop.lang.creditcard = {
+            invalid_number: 'Invalid card number',
+            invalid_security_code: 'Invalid verification code'
+        };
+
+        this.Shop.lang.product = {
+            availability_notify_title: 'Inform me about availability',
+            availability_email_description: 'Notification will be send on the following e-mail address when <br> product is available in our warehouse',
+            availability_save: 'Subscribe',
+            availability_success: 'E-mail address has been added to queue list',
+            availability_email_found: 'E-mail address already exists on queue list',
+            availability_unsub_success: 'Availability notifications have been cancelled',
+            availability_unsub_not_found: 'User is not signed up to the product queue list',
+            availability_unsub_not_logged: 'You have to log in to cancel product availability notifications',
+            regular_price: 'Regular price',
+            lowest_price: 'The lowest price during 30 days prior to the reduction',
+            lowest_price_from_create: 'Lowest price since added to the store',
+            other_currency: 'Price in another currency'
+        };
+
+        this.Shop.lang.pickupsPoints = {
+            find_point: 'Find a pickup point nearest you',
+            enter_address: 'Enter address',
+            select_pickup_point: 'Select a pickup point',
+            select_pickup_point_list: 'Select a pickup point from the list',
+            change_pickup_point: 'change point',
+            api_error: 'Something went wrong with API',
+            only_prepayment: 'Only prepaid',
+            selected_pickup_point_header: 'Selected pickup point',
+            only_prepayment_label: 'This pick-up point does not handle certain methods of payment',
+            searching_location: 'Searching For Your Location'
+        };
+
+        this.Shop.lang.fileUploader = {
+            wrong_extension: '{filename} has wrong extension.',
+            wrong_size: '{filename} size exceeds max size. {size} KB allowed.'
+        };
+
+        this.Shop.lang.verificationService = {
+            request_sent: 'request sent',
+            verification_code_header: 'We have sent you a verification code',
+            verification_code_filed_info: 'Something went wrong and we couldn\'t send you an email. Please try again in a few minutes.',
+            verification_code_info: 'We have sent you a verification code to your e-mail address {email}. Check your mailbox.',
+            verification_code_filed_header: 'Sending failed',
+        };
+
+        this.Shop.lang.rodo = {
+            archive_downloaded: 'Thank you for downloading your archive',
+            archive_downloaded_header: 'Archive downloaded'
+        };
+
+        this.Shop.lang.search = {
+            start_phrases_header: 'Suggested search',
+            load_more: 'more',
+            show_all_products: 'go to all products',
+            go_to_products: 'Go to products for: {name}',
+            history: 'History',
+            suggestions: 'Suggestions',
+            products: 'Products',
+            products_section_title: 'Product results for: {name}',
+            producers: 'Producers',
+            in_category: 'in category',
+            message_empty_input_history: 'Enter a search phrase or repeat one of the searches below.',
+            message_empty_input: 'Enter a search phrase.',
+            message_no_result: 'search in shop',
+            category: 'category',
+            error: 'Woops, there\'s been an error.<br> Try to <a class="js__search-refresh-xhr">refresh the search.</a><br> If it doesn\'t work out, try later. Sorry!',
+            stock_price_info: 'The price concerns the base model and variants may vary in price.',
+            more_producers: 'More producers',
+            more_products: 'More products'
+        };
+
+        this.Shop.lang.onlinePayment = {
+            pay_quickly: 'pay quickly',
+            choose_bank: 'or choose a bank'
+        };
+
+        this.Shop.lang.plugins.inpost = {
+            header: 'Shipping information - Paczkomaty InPost',
+            service_info: 'Use of Paczkomat 24/7 requires passing your information (name, address, phone number, zip code) to InPost.',
+            service_accept: 'I have read and accept the %s terms and conditions of Paczkomat 24/7 service %s',
+            service_link: 'http://www.paczkomaty.pl/faq,191.html',
+            terms_link: 'https://inpost.pl/sites/default/files/docs/regulaminy/regulamin-swiadczenia-uslugi-paczkomaty-247-przez-inpost-paczkomaty-sp-z-oo-obowiazujacy-od-02102019_3.pdf',
+            enterzipcode: 'To select a Paczkomat enter the correct zip code',
+            request_error: 'Error while downloading the Paczkomaty list. Try again in a moment.',
+            nonear: 'Unable to find a Paczkomat near your zip code.',
+            showall: 'show all Paczkomaty',
+            showother: 'Show other available Paczkomaty',
+            select_machine: '(select)',
+            alert_select_machine: 'Select a Paczkomat first',
+            alert_accept_terms: 'To continue, please accept the terms and conditions of Paczkomat 24/7',
+            pww_picking_up_possibility: 'Picking up a parcel on weekends is possible only from %s a Parcel Locker available: 24/7',
+            pww_incorrect_point_message: 'It is not possible to picking up the parcel on weekends at the selected point. To collect a parcel on Saturday or Sunday, select a Parcel Locker marked with the icon %s and available: 24/7.',
+            selected_point: 'Selected point:'
+        };
+
+        this.Shop.lang.productGallery = {
+            copyLinkToGallery: 'Copy the link to the gallery',
+            copyLink: 'Copy the link',
+            linkCopied: 'Link copied',
+            picture: 'Picture'
+        };
+        
+        this.Shop.lang.menuProductPreview = {
+            seeMore: 'See more'
+        };
+
+        this.Shop.lang.validation = {
+            numberStartsWithZeroError: 'The polish phone number cannot start with 0. Enter the 9-digit number without the 0 in front.',
+            tooShortNumberError: 'Enter the 9-digit number.'
+        };
+
+        this.Shop.lang.plugins.paczkomaty = this.Shop.lang.plugins.inpost;
+
+        this.Shop.lang.tooltip = {
+            current_shipping_time: 'For the given quantity, the shipping time will be',
+            up_to: 'Up to',
+            we_can_send_within: 'can get shipped within',
+        }
+    }
+})();
